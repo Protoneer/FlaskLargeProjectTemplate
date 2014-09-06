@@ -10,7 +10,7 @@ app.config.from_object('config')
 def not_found(error):
     return render_template('404.html'), 404
 
-from app.mod_api.blueprint import mod_api as api_module
+from app.mod_api_1_0.blueprint import mod_api as api_module
 from app.mod_www.blueprint import mod_www as www_module
 
 # Register blueprint(s)
